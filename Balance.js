@@ -7,7 +7,7 @@ var request = require("request");
 const getToken = async () => {
     var request = require("request");   
     const encode = require('nodejs-base64-encode');    
-    let apiClientSecret ='cfbdb775edffafdec67725406b918d1e'
+    let apiClientSecret ='xxxx'
     let apiClientId ='23fb97fa586c608f'
     const authHeader =  'Basic ' + encode.encode(apiClientId +':'+ apiClientSecret, 'base64')    
     const resp = await fetch('https://accounts.probit.com/token', {
